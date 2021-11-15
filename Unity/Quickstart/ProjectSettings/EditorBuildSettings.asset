@@ -9,6 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Quickstart.unity
     guid: 503078bf1d6dd3d489c5e8ea526c2842
   m_configObjects:
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 9cd51ce7fa0aae141a44b2bb5bb8eca0,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d71d26f04fb4bf847b0b6af516017492,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 66b21e3c31af30d4297c21d07fa42f70,

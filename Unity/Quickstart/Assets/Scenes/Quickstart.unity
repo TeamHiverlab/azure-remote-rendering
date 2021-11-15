@@ -819,10 +819,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3acddbb9e77a624c81816c75fb8d2f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RemoteRenderingDomain: westus2.mixedreality.azure.com
-  AccountDomain: 
-  AccountId: 
-  AccountKey: 
+  RemoteRenderingDomain: 'southeastasia.mixedreality.azure.com '
+  AccountDomain: southeastasia.mixedreality.azure.com
+  AccountId: 68844f17-5001-4c09-95dc-065c546032bb
+  AccountKey: 4p8CEs17hYO4FdsQIM8yjG6msrmjbR9SPvx9hi+YGJ4=
   MaxLeaseTimeHours: 0
   MaxLeaseTimeMinutes: 10
   VMSize: 2
@@ -858,7 +858,6 @@ MonoBehaviour:
   _autoRenewLeaseThresholdMinutes: 5
   _autoRenewLeaseAmountMinutes: 15
   AutoStopSession: 0
-  RefreshSessionTimeInSeconds: 20
 --- !u!114 &1368195871
 MonoBehaviour:
   m_ObjectHideFlags: 0
