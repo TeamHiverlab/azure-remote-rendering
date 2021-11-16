@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -262,13 +262,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 221298009}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.02930805, y: -0.05427152, z: 3.0702395}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1071489427}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &221298011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,7 +594,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 20
   field of view: 60
   orthographic: 0
@@ -602,7 +602,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -664,6 +664,135 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1019477649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1019477650}
+  - component: {fileID: 1019477655}
+  - component: {fileID: 1019477654}
+  - component: {fileID: 1019477653}
+  - component: {fileID: 1019477652}
+  - component: {fileID: 1019477651}
+  m_Layer: 0
+  m_Name: Warehouse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1019477650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019477649}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.127, y: -0.61, z: 3}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_Children: []
+  m_Father: {fileID: 1071489427}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1019477651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019477649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e413dfbc57e33f644a6fd16c3a2da70a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTargetEntityChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1019477652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019477649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c43994d14c9e2940a0fb7dc70f1cf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnRemoteEntityClicked:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1019477653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019477649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c2e68c27226c649862d8c77879a882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TintColor: {r: 0, g: 1, b: 0, a: 0.1}
+--- !u!114 &1019477654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019477649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f64050098b0db1d45a57dfc0ed29c8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnBoundsReady:
+    m_PersistentCalls:
+      m_Calls: []
+  OnBoundsNotReady:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1019477655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019477649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9482922d2fea649a6874c5ac3d636d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutomaticallyLoad: 1
+  modelDisplayName: Warehouse
+  modelPath: https://hivemind.blob.core.windows.net/arroutput/Red%20Lion%20Air%20Freight%20L2%20v1.arrAsset?sp=r&st=2021-11-16T05:22:53Z&se=2021-11-16T13:22:53Z&spr=https&sv=2020-08-04&sr=b&sig=fLmGMF0QL8FWpxe%2FvHXHKEkFgc9x%2F1U2jvjO%2BAK3AkA%3D
+  OnModelNotReady:
+    m_PersistentCalls:
+      m_Calls: []
+  OnModelReady:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStartLoading:
+    m_PersistentCalls:
+      m_Calls: []
+  OnModelLoaded:
+    m_PersistentCalls:
+      m_Calls: []
+  OnModelUnloading:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLoadProgress:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1071489425
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +835,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 221298010}
+  - {fileID: 1019477650}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2014,10 +2144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 921fa90b22fc3e74c9f94b59425b9ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  remoteRenderingDomain: westus2.mixedreality.azure.com
-  accountId: 
-  accountDomain: 
-  accountKey: 
+  remoteRenderingDomain: 'southeastasia.mixedreality.azure.com '
+  accountId: 68844f17-5001-4c09-95dc-065c546032bb
+  accountDomain: 'southeastasia.mixedreality.azure.com '
+  accountKey: 4p8CEs17hYO4FdsQIM8yjG6msrmjbR9SPvx9hi+YGJ4=
   renderingSessionVmSize: 2
   maxLeaseHours: 0
   maxLeaseMinutes: 20
@@ -2029,8 +2159,8 @@ MonoBehaviour:
   OnAuthorizationChanged:
     m_PersistentCalls:
       m_Calls: []
-  storageAccountName: 
-  blobContainerName: 
+  storageAccountName: hivemind
+  blobContainerName: arroutput
   modelPath: 
 --- !u!114 &1831931090
 MonoBehaviour:
@@ -2048,7 +2178,6 @@ MonoBehaviour:
   _autoRenewLeaseThresholdMinutes: 5
   _autoRenewLeaseAmountMinutes: 15
   AutoStopSession: 1
-  RefreshSessionTimeInSeconds: 20
 --- !u!4 &1831931091
 Transform:
   m_ObjectHideFlags: 0
